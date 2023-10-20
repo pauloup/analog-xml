@@ -1,23 +1,27 @@
 # Analog XML
 Analog é um XML de configuração da Google Camera para os aparelhos POCO F4 GT e Redmi K50 Gaming.
 
-[ Imagem de apresentação destacando os 64MP, o granulado natural e as cores intensas. ]
+[Imagem ilustrativa destacando os recursos de 64MP, granulado natural e cores intensas.]
 
 Com visual inspirado em fotos de filme, tiradas com câmera analógica, Analog tem cores fortes, alta definição e granulado natural.
 ## Autoria
 Criado por Paulo José @paulotwain, 2022-2023.
+
 Sou programador e artista, e trabalho com fotografia e edição de imagem há 20 anos.
 
-Desde que conheci a Google Camera, em 2018, gosto de testar novas versões e estudar a tecnologia usada no app.
+Conheci a Google Camera em 2018, e desde então gosto de testar novas versões e estudar as tecnologias usadas no app.
 ## Download
 Versão mais recente em [Releases](https://github.com/pauloup/analog-xml/releases).
-## Google Camera
-Feito para a Google Camera 8.4 do Shamim. Download: [SGCAM 8.4.400.42 STABLE V43](https://t.me/googlecameramodbyshamim/788).
+
+Feito para a Google Camera 8.4 do Shamim: [SGCAM_8.4.400.42.XXX_STABLE_V43_ENG.apk](https://t.me/googlecameramodbyshamim/789?single)
+A versão ENG é recomendada para ativar o recurso [Google Lens](#Google%20Lens), mas a versão principal ou a SNAPCAM também podem ser usadas.
 ## Instalação
 Copie o XML para a pasta *SGCAM/XML*. Abra o app, dê dois toques no espaço vazio ao lado do botão de disparo, e importe a configuração.
 
-[ Imagem dos 3 passos de instalação. ]
+[Imagem dos 3 passos de instalação.]
 ## Fotos
+Fotos tiradas na SGCAM 8.4 com Analog:
+
 Incluir:
 - Principal
 - Ultra Angular
@@ -38,9 +42,9 @@ Analog tenta retratar a realidade em fotos definidas e intensas, resgatando o vi
 
 A tecnologia da Google Camera ajuda a enfrentar os desafios da fotografia digital, como perda de detalhes e textura, e cores apagadas.
 
-[ Imagem comparando uma fotografia digital e uma analógica. A fotografia digital apresenta perda de detalhes, um visual de pintura a óleo, e cores planas sem contraste. A fotografia analógica tem granulado natural do filme, preserva detalhes e tem cores intensas. ]
+[Imagem comparando uma fotografia digital e uma analógica. A fotografia digital apresenta perda de detalhes, um visual de pintura a óleo, e cores planas sem contraste. A fotografia analógica tem granulado natural do filme, preserva detalhes e tem cores intensas.]
 
-A qualidade técnica de uma imagem pode ser comparada, mas a beleza é sempre subjetiva. Analog é tão bom quanto qualquer outro XML, só depende dele atender ao que se busca.
+A qualidade técnica de uma imagem pode ser comparada, mas a beleza é sempre subjetiva. Analog é tão bom quanto qualquer outro XML, basta atender ao que se busca.
 
 Principais [Recursos](#Recursos):
 - [4 Lentes](#4%20Lentes): Todas as lentes otimizadas para fotos similares e consistentes.
@@ -54,9 +58,9 @@ Outros: [Visão Noturna](#Visão%20Noturna), [Retrato](#Retrato), [Preto e Branc
 
 Além de [Recursos](#Recursos), outras seções organizam as informações sobre Analog:
 
-[Motivação](#Motivação) apresenta os desafios e as referências usadas na criação de Analog.
+[Motivação](#Motivação) apresenta a intenção, os desafios e as referências usadas na criação de Analog.
 
-[Interface](#Interface) define o que são os botões e opções na tela, e ensina como usar a Google Camera.
+[Interface](#Interface) define o que são os botões e opções na tela, e ensina como usar a Google Camera configurada com Analog.
 
 [Limitações](#Limitações) debate os problemas que podem surgir, e suas possíveis soluções, como ruído alto, cores saturadas e arquivos grandes.
 
@@ -64,19 +68,19 @@ Além de [Recursos](#Recursos), outras seções organizam as informações sobre
 
 [XMLs adicionais](#XMLs%20adicionais) traz versões alternativas, como o Analog-Soft, que reduz a nitidez digital para uma foto com detalhes suaves e naturais.
 
-[Porque o POCO F4 GT](#Porque%20o%20POCO%20F4%20GT) ressalta vantagens e desvantagens do aparelho para o uso da Google Camera.
-
 [Especificações](#Especificações) reúne dados técnicos das lentes do POCO F4 GT e do Redmi K50 Gaming, como abertura, modelo do sensor, e distância de foco.
 
-[Sobre a Google Camera](#Sobre%20a%20Google%20Camera) explica como a Google Camera funciona e como uma foto é tirada, do disparo até ser salva na galeria.
+[Google Camera](#Google%20Camera) explica como a Google Camera funciona quando uma foto é tirada, do momento do disparo, até ser salva na galeria.
 
 [Configurações](#Configurações) lista as principais configurações da Google Camera usadas em Analog, e explica como cada uma contribui para a foto.
 
-[Configurações opcionais](#Configurações%20opcionais) mostra como ativar recursos que não fazem parte de Analog, como RAW no Retrato, Top Shot, e vídeo 8K.
+[Extras](#Extras) mostra como ativar recursos que não fazem parte de Analog, como RAW no Retrato, Melhor Foto, e vídeo 8K.
 
 [Bugs](#Bugs) são situações em que a Google Camera não funciona como o esperado.
 
-Por fim, [Glossário](#Glossário) tem palavras incomuns das configurações, e termos técnicos comuns das discussões sobre a Google Camera.
+[Glossário](#Glossário) tem palavras especiais das configurações, e termos técnicos comuns nas discussões sobre a Google Camera.
+
+Por fim, [Changelog](#Changelog) registra as atualizações no desenvolvimento de Analog, de forma técnica.
 ## Motivação
 
 Analog foi criado unindo técnica e arte em fotos realistas, como um registro histórico, mas com um visual marcante, que já agrada ao meu gosto e não preciso editar pra postar.
@@ -109,7 +113,7 @@ A seleção das lentes traseiras fica na direita:
 - Ultrawide (UW): Lente Ultra Angular de 16mm, f/2.2 e sensor Omnivision de 8MP.
 - Macro (M): Lente Macro de 25mm, f/2.4 e sensor GalaxyCore de 2MP.
 - Black and White (BW): Lente Principal em [Preto e Branco](#Preto%20e%20Branco) com um filtro ortocromático.
-- High Quality (HQ): Lente Principal em [Qualidade Máxima](#Qualidade%20Máxima) com 48 frames.
+- High Quality (HQ): Lente Principal em [Qualidade Máxima](#Qualidade%20Máxima) com 48 quadros.
 
 A seleção da lente Frontal fica à esquerda do botão de disparo:
 - Selfie: Lente Frontal de 27mm, f/2.24 e sensor Sony de 20MP.
@@ -189,7 +193,7 @@ O uso exagerado de Remoção de Ruído destrói os detalhes finos da imagem, dei
 
 A Google Camera nasceu da ideia de combinar várias fotos para reduzir ruído de forma natural, a mesma tecnologia usada pela NASA pra fotografar o espaço profundo. Assim, não é preciso usar algoritmos de remoção de ruído.
 
-Graças à combinação de frames do HDR+ Melhorado, o ruído que fica na imagem é orgânico e não apresenta a característica artificial do sensor digital. E em situações com pouca luz, o ruído faz parte da realidade.
+Graças à combinação de quadros do HDR+ Melhorado, o ruído que fica na imagem é orgânico e não apresenta a característica artificial do sensor digital. E em situações com pouca luz, o ruído faz parte da realidade.
 
 Analog foi criado com a intenção de preservar detalhes e granulado. O granulado real é uma das características fundamentais que permite capturar o máximo de nitidez na fotografia. 
 
@@ -243,9 +247,9 @@ Para usar esse recurso em outras lentes, veja [XMLs Adicionais: Analog-Mono](#An
 
 Não funciona no Vídeo, Panorama e Photo Sphere
 ### Qualidade Máxima
-Por padrão, as fotos tem um número de frames automático... Mas
+Por padrão, as fotos tem um número de quadros automático... Mas
 ### HDR+ Melhorado
-Em cenas com luz extremamente baixa, o HDR+ Melhorado pode criar fotos mais escuras que o HDR+ simples. Veja [HDR+ melhor que o HDR+ Melhorado](#HDR+%20melhor%20que%20o%20HDR+%20Melhorado)
+Em cenas com luz extremamente baixa, o HDR+ Melhorado pode criar fotos mais escuras que o HDR+ Ativado. Veja [HDR+ melhor que o HDR+ Melhorado](#HDR+%20melhor%20que%20o%20HDR+%20Melhorado)
 
 Faz parte do HDR+ Melhorado tirar várias fotos mais escuras e combinar elas em uma única foto, com menos ruído, que é clareada para a exposição correta no final.
 
@@ -293,7 +297,9 @@ Cada lente possui um modelo de sensor diferente, que produz fotos com as caracte
 - Desativar a opção de Balanço de Branco (WB);
 - Ou desativar a opção de Library Patch (LB);
 - Ou desativar ambas as opções de Balanço de Branco (WB) e Library Patch (LB)
-#### Dificuldade ao focar
+
+#### Balanço de Branco Automático incorreto
+### Dificuldade ao focar
 (Comum) O foco automático pode não conseguir focar em objetos pequenos, transparentes, ou escuros. Pode ajudar:
 - Tocar na tela...
 - Foco manual... A Lua é um motivo difícil de focar, e a sessão Dicas: Astrofotografia pode ajudar. Veja 
@@ -305,18 +311,18 @@ Reading mode ou acessibilidade
 Veja Dicas pra postar com qualidade... Desativar Hires... Reduzir qualidade JPG....
 #### HDR+ melhor que o HDR+ Melhorado
 
-Em cenas com luz extremamente baixa, o HDR+ Melhorado pode criar fotos mais escuras que o HDR+ simples.
+Em cenas com luz extremamente baixa, o HDR+ Melhorado pode criar fotos mais escuras que o HDR+ Ativado.
 
 Faz parte do HDR+ Melhorado tirar várias fotos mais escuras, e combinar elas em uma única foto com menos ruído, que é clareada para a exposição correta.
 
 Mas quando a luz da cena é tão baixa, essas fotos mais escuras não conseguem capturar luz suficiente, e mesmo depois de clareada, a foto ainda fica mais escura.
-#### RAW incorreto no Google Photos
+#### RAW incorreto no Google Fotos
 #### Tempo restante incorreto no modo Astro
 ### Lente Principal
 #### Sombras verdes na Principal
 (Muito comum) Áreas de sombras da lente Principal (W) podem ficar com um tom esverdeado na opção HDR+ Melhorado. Parece ter relação com ISO baixo. Pode ajudar:
 - Tocar a imagem na tela e aumentar a exposição;
-- Ou usar a opção HDR+ simples;
+- Ou usar a opção HDR+ Ativado;
 - Ou usar o modo Visão Noturna.
 #### Padrão de pontos na Principal
 (Comum) Nas sombras padrão de pontos pelo autofoco em PSAF e o binning 
@@ -332,7 +338,7 @@ Mas quando a luz da cena é tão baixa, essas fotos mais escuras não conseguem 
 (Muito comum) A lente Ultra Angular (UW) pode produzir faixas coloridas sobre a foto, quando há algo muito claro na cena, como uma janela e a luz do sol, ou também em situações com pouca luz, ou ao tirar várias fotos em seguida. Parece ser um defeito do sensor da lente Ultra Angular. Pode ajudar:
 - Esperar um pouco e tirar a foto novamente;
 - Ou mudar o enquadramento para reduzir as áreas com muita luz;
-- Ou usar a opção HDR+ simples
+- Ou usar a opção HDR+ Ativado
 - Ou usar o modo Visão Noturna.
 - Ou tocar a imagem na tela e aumentar a exposição.
 #### Hot pixels na Ultra Angular
@@ -351,7 +357,7 @@ Movimentar a mão...
 ## Dicas
 ### Preparação
 Limpar a lente
-[ Imagem comparando um foto com a lente suja e outra com a lente limpa. A lente suja deixa a imagem com menos contrate e áreas com menos nitidez. ]
+[Imagem comparando um foto com a lente suja e outra com a lente limpa. A lente suja deixa a imagem com menos contrate e áreas com menos nitidez.]
 
 Estabilizar o celular
 
@@ -402,8 +408,8 @@ Ativar Balanço de Branco não configurações, desativar AWB, tocar na tela pra
 ### Exposição manual
 Principal vai até 1s no modo normal e 36s no nightsight (tem q colocar 59s)...
 ISO não é real no HDR+ Melhorado...
-Exposição final tem q levar em conta o número de frames do hdr+ melhorado.
-Pra simular exposição negão manual, colocar frames=1
+Exposição final tem q levar em conta o número de quadros do hdr+ melhorado.
+Pra simular exposição negão manual, colocar quadros=1
 Opções de exposição nas configurações...
 ### Retrato com RAW
 
@@ -411,6 +417,8 @@ Opções de exposição nas configurações...
 Comparar a qualidade do zoom antes e depois da foto tirada, em diferentes níveis de zoom.
 
 Zoom melhor com modo Astro e exposição manual - comparar.
+
+Zoom extremo é melhor com a mão em movimento natural, e péssimo com tripé ou celular imóvel (comparação de fotos)
 ### Camera nativa
 A Google Camera geralmente entrega fotos melhores, mas às vezes pode ser interessante tirar fotos com a câmera nativa.
 
@@ -427,25 +435,28 @@ Estas são as configurações pra deixar as fotos da câmera nativa mais parecid
 ### Analog-Mono
 Preto e Branco intenso em todas as lentes...
 ### Analog-Max
-Máxima qualidade com 48 frames em todas as lentes...
+Máxima qualidade com 48 quadros em todas as lentes...
 ### Analog-Smooth
 Com remoção de ruído...
 ### Analog-Flat
 Menos saturação, flat...
 ### Analog-Soft
 Menos nitidez...
-## Sobre o POCO F4 GT
-Vantagens do POCO F4 GT para usar a Google Camera:
-- Sensor Principal Sony de 64MP
-- Snapdragon flagship
-- Memória RAM de 12GB
-- Armazenamento de 256GB
-- RAW em todas as lentes
+
+## Especificações
+O hardware do POCO F4 GT/Redmi K50 Gaming tem vantagens e desvantagens no uso da Google Camera e apps de fotografia:
+
+Vantagens:
+- Lente Principal com sensor da Sony, que entrega cores melhores que outras marcas como Omnivision, e com resolução de 64MP/16MP, acima da média atual dos celulares (48MP/12MP), que entrega mais detalhes no zoom e possibilidades de corte.
+- Processador Snapdragon 8 Gen 1, o mais potente (flagship) de 2022, que permite usar todo o potencial de processamento da Google Camera pra fotos com qualidade e rapidez.
+- RAW 10bit em todas as lentes e sem bloqueios, comuns em outras fabricantes.
 
 Desvantagens:
-- Sensor com binning de baixa qualidade em áreas com pouca luz
-- Ultra Angular e Macro ruins
-### Especificações
+- O sensor da lente Principal é antigo, de 2019, e tem binning de baixa qualidade, gerando [sombras verdes](#Sombras%20verdes%20na%20Principal) em áreas escuras.
+- Os sensores das lentes Ultra Angular e Macro não tem boa qualidade, gerando fotos com baixa resolução e hot pixels.
+- Apenas a lente Principal possui foco automático, o que restringe o uso das outras lentes para fotografar em distâncias limitadas.
+
+Especificações completas:
 ### Lente Principal
 #### Lente
 - Abertura: f/1.89
@@ -551,8 +562,75 @@ Desvantagens:
 - Distância de foco: [testar]
 - Distância de foco mínima: [testar]
 - Distância de foco máxima: [testar]
-## Sobre a Google Camera
-Sobre subexposição, combinação de frames e hdr
+## Google Camera
+Sobre subexposição, combinação de quadros e hdr
+
+## Tecnologias
+### AWB
+O recurso AWB significa Balanço de Branco Automático (Automatic White Balance), e equilibra as cores na foto.
+
+[Imagem comparando 3 versões da mesma foto de uma paisagem de montanhas verdes com céu nublado: A 1ª foto com balanço de branco frio, onde o céu fica azulado, a 2ª com balanço de branco neutro e céu cinza, e a 3ª com balanço de branco quente e céu amarelado. Um pequeno gráfico indica a níveis dos canais de cor vermelho, verde e azul em cada foto, a 1ª com mais azul, a 2ª com todos iguais, e a 3ª com mais vermelho.]
+
+Ele ajusta a intensidade dos canais de cor vermelho, verde e azul que formam a imagem, de acordo com a luz ambiente na cena.
+
+Esse ajuste tenta deixar a cor branca o mais neutra o possível, o que ajuda na percepção e representação correta das outras cores.
+#### Nossa visão
+Na realidade, toda luz visível tem cor. Até a luz branca do sol é formada pela combinação de várias cores de luz diferentes.
+
+[Foto de um raio de luz branca do sol passando por um prisma, que decompõe a luz branca, que passa por ele, em uma faixa de arco-íris com várias cores, do vermelho ao azul.]
+
+Nossa visão percebe a luz do sol como branca, mas a atmosfera filtra e modifica a luz do sol ao longo do dia, o que altera sua cor.
+
+De manhã e no poente, o sol próximo ao horizonte fica mais vermelho e cria cores quentes no céu, que vão do rosa ao laranja.
+
+Ao longo do dia, o sol se eleva e o céu filtra menos sua luz. A luz branca do sol e o azul do céu lançam uma cor mais fria no ambiente.
+
+[Imagem comparando uma foto de uma paisagem ao meio dia]
+
+Nosso cérebro precisa reajustar a referência do que é o branco, para compensar essa variação na cor da luz ambiente ao longo do dia.
+
+Por isso, vemos uma blusa branca na luz azulada do meio dia, ou na luz avermelhada do pôr do sol, e ainda sabemos que ela é branca.
+
+Isso é o nosso Balanço de Branco. Nossa mente equilibra a intensidade das cores vermelha, verde e azul, percebidas pelos cones nos olhos.
+
+Nem sempre o nosso balanço de branco concorda com o de outras pessoas, como mostrou o famoso [vestido branco e dourado](https://g1.globo.com/tecnologia/noticia/2015/02/azul-e-preto-ou-branco-e-dourado-vestido-polemico-quebra-internet.html).
+
+[Imagem de um meme do vestido branco e dourado ou preto e azul, que dividiu opiniões em 2015]
+#### AWB do sistema
+Toda câmera digital possui um recurso de Balanço de Branco Automático, que faz a mesma coisa que a nossa visão.
+
+Esse recurso observa a imagem captada pelo sensor, identifica possíveis áreas brancas e ajusta os canais de cor pra deixa-las neutras.
+
+[Imagem comparando uma foto antes do Balanço de Branco, com uma luz verde intensa cobrindo toda a imagem, e a mesma foto depois do Balanço de Branco, com cores mais corretas e o branco neutro]
+
+O Balanço de Branco depende das cores captadas pelo sensor, e é muito sensível à qualidade do sensor e ao conteúdo da cena.
+
+Cada sensor pode precisar de ajustes específicos de Balanço de Branco para representar as cores com precisão.
+
+O POCO F4 GT possui 4 lentes, com sensores da Sony, Omnivision e GalaxyCore. Por isso, as [lentes podem apresentar cores diferentes](#Lentes%20inconsistentes).
+
+O Balanço de Branco do sistema, o mesmo usado na câmera nativa, é usado quando a [opção AWB](#Opção%20AWB) está desativada.
+
+Ele costuma equilibrar bem as cores, especialmente em cenas na sombra, mas pode deixar cores amareladas e saturadas ao sol.
+
+[Imagem comparando fotos usando o Balanço de Branco do sistema, uma com uma pessoa na sombra, dentro de casa, e cores corretas, e outra com a mesma pessoa no sol com pele amarelada e saturada.]
+#### AWB da Google Camera
+
+Outro recurso aplicado antes do Balanço de Branco é o [CCT](#CCT), que ajusta a influência de um canal no outro para melhorar as cores.
+
+
+### CCT
+A Temperatura de Cor Correlacionada, ou Correlated Color Temperature (CCT) é o recurso converte o sinal do sensor em cores RGB.
+
+O sensor captura 3 canais de cor, vermelho, verde e azul, mas geralmente existe uma sobreposição de sensibilidade entre eles.
+
+[Gráfico da sensibilidade dos canais, verde e azul se sobrepondo]
+
+https://stella.com.br/blog/temperaturas-de-cor-e-as-percepcoes-humanas
+### Sabre
+
+### Raisr
+
 ## Configurações
 Abaixo estão as principais configurações da Google Camera usadas em Analog.
 
@@ -570,9 +648,9 @@ Combinação dos melhores balanços de branco
 ### Correção de sombras esverdeadas na Principal
 A lente Principal pode gerar áreas de sombras com tons esverdeados, com menos qualidade, em fotos tiradas no modo HDR+ Melhorado.
 
-Esse problema aparece quando os frames tem uma exposição muito baixa, geralmente usada pelo HDR+ Melhorado para recuperar áreas estouradas em cenas com muita luz.
+Esse problema aparece quando os quadros tem uma exposição muito baixa, geralmente usada pelo HDR+ Melhorado para recuperar áreas estouradas em cenas com muita luz.
 
-Frames com exposição muito baixa podem ter ISO abaixo de 100 ou tempo de exposição abaixo de 1/1000.
+quadros com exposição muito baixa podem ter ISO abaixo de 100 ou tempo de exposição abaixo de 1/1000.
 
 Se por um lado, a exposição muito baixa permite preservar aos detalhes de áreas muito claras, áreas com sombra são prejudicadas.
 
@@ -582,7 +660,7 @@ Sensores com binning, como o da lente Principal, combinam pixels numa operação
 
 Esses erros 
 
-com frames com ISO abaixo de 100, ou 
+com quadros com ISO abaixo de 100, ou 
 
 
 sofre de um problema comum em sensores com binning
@@ -603,9 +681,9 @@ Darken Light (ISO limiting)
 - Valor: 0.500
 - Caminho: Configurações > Additional Settings > Lib-patcher > Main lens > Exposure > Darken Light (ISO limiting)
 - Limita o ganho de ISO na imagem final.
-- Aumenta o tempo de exposição para frames mais claros, que precisam de menos ganho.
-- Por exemplo, com Darken Light de 1.000, a foto terá 8 frames de 1/2000s e ISO50, mais escuros, que precisam de um ganho de 4x.
-- Com Darken Light de 0.500, a foto terá 8 frames de 1/1000 e ISO50, mais claros, que precisam de um ganho menor de 2x.
+- Aumenta o tempo de exposição para quadros mais claros, que precisam de menos ganho.
+- Por exemplo, com Darken Light de 1.000, a foto terá 8 quadros de 1/2000s e ISO50, mais escuros, que precisam de um ganho de 4x.
+- Com Darken Light de 0.500, a foto terá 8 quadros de 1/1000 e ISO50, mais claros, que precisam de um ganho menor de 2x.
 
 [Comparação de fotos com Darken Light de 1.000 e foto com 1/2000s, e de 0.500 com 1/1000s final 1000. As duas fotos tem ISO final de ISO40, mas a foto com Darken Light de 0.500 tem menos sombras esverdeadas]
 
@@ -633,58 +711,78 @@ Reduz aberração cromática em toda a área da imagem.
 
 camera.ddepth_rear
 camera.ddepth_front
-### Correção de combinação de frames com movimento
+### Correção de combinação de quadros com movimento
 #### Sabre Motion Fix
 - Valor:
-	- Frontal (Front lens):
-	- Principal (Main lens): 20332e
-	- Macro (Tele lens):
-	- Ultra Angular (Wide lens):
-	- Preto e Branco (ID4):
-	- Alta Qualidade (ID5):
+	- Front lens (Frontal):
+	- Main lens (Principal): 20332e
+	- Tele lens (Macro):
+	- Wide lens (Ultra Angular):
+	- ID4 (Preto e Branco):
+	- ID5 (Qualidade Máxima):
 - Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sharpness> Sabre Motion Fix
 
-Corrige problemas na combinação de frames, como cores incorretas em regiões com movimento, e ruído de cor em detalhes finos.
+Corrige problemas na combinação de quadros, como cores incorretas em regiões com movimento, e ruído de cor em detalhes finos.
 
-[ Imagem comparando fotos com Sabre Motion Fix de 20332e e Off (as in Library) ]
-### Máximo de frames no HDR+ Melhorado
-Pra descobrir a quantidade máxima de frames no HDR+ Melhorado, coloquei um valor grande na configuração de frames, tirei uma foto com a opção logcat ativada e olhei no arquivo de log que a partir do 54, todos os frames foram pulados pelo sistema.
+[Imagem comparando fotos com Sabre Motion Fix de 20332e e Off (as in Library)]
+### Máximo de quadros no HDR+ Melhorado
+Pra descobrir a quantidade máxima de quadros no HDR+ Melhorado, coloquei um valor grande na configuração de quadros, tirei uma foto com a opção logcat ativada e olhei no arquivo de log que a partir do 54, todos os quadros foram pulados pelo sistema.
 ### Nitidez
-#### Sabre Burst Merge 1
-- Valor:
-	- Frontal (Front lens):
-	- Principal (Main lens): 3.00
-	- Macro (Tele lens):
-	- Ultra Angular (Wide lens):
-	- Preto e Branco (ID4): 3.00
-	- Alta Qualidade (ID5): 3.00
-- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sabre > Sabre Burst Merge 1
+#### Sabre Burst Merge 1, 2, 3
+- Valor 1:
+	- Front lens (Frontal):
+	- Main lens (Principal): 3.00
+	- Tele lens (Macro):
+	- Wide lens (Ultra Angular):
+	- ID4 (Preto e Branco): 3.00
+	- ID5 (Qualidade Máxima): 3.00
+- Valor 2:
+	- Front lens (Frontal):
+	- Main lens (Principal): 5.0
+	- Tele lens (Macro):
+	- Wide lens (Ultra Angular):
+	- ID4 (Preto e Branco): 5.0
+	- ID5 (Qualidade Máxima): 5.0
+- Valor 3:
+	- Front lens (Frontal):
+	- Main lens (Principal): 1.000 (Default)
+	- Tele lens (Macro):
+	- Wide lens (Ultra Angular): 1.500
+	- ID4 (Preto e Branco): 1.000 (Default)
+	- ID5 (Qualidade Máxima): 1.000 (Default)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sabre > Sabre Burst Merge 1, 2, 3
 
-Melhora os detalhes com zoom, reduzindo pixelado.
-#### Sabre Burst Merge 2
-- Valor:
-	- Frontal (Front lens):
-	- Principal (Main lens): 5.0
-	- Macro (Tele lens):
-	- Ultra Angular (Wide lens): 1.500
-	- Preto e Branco (ID4): 5.0
-	- Alta Qualidade (ID5): 5.0
-- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sabre > Sabre Burst Merge 2
+[Sabre](#Sabre) é um algoritmo da Google para combinação de quadros, que melhora a nitidez nos detalhes finos e a redução de ruído.
 
-Melhora os detalhes com zoom, reduzindo pixelado.
-#### Sabre Burst Merge 3
-- Valor:
-	- Frontal (Front lens):
-	- Principal (Main lens): 1.000 (Default)
-	- Macro (Tele lens):
-	- Ultra Angular (Wide lens): 1.500
-	- Preto e Branco (ID4): 1.000 (Default)
-	- Alta Qualidade (ID5): 1.000 (Default)
-- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sabre > Sabre Burst Merge 3
+As configurações de Sabre Burst Merge ajustam o alinhamento dessa combinação, e os valores padrão melhoram o resultado de forma sutil.
 
-Aumenta a nitidez nos detalhes finos.
+Valores incorretos no Sabre Burst Merge 3 causam perda de nitidez nos detalhes finos e repetição de pixels nas bordas da imagem.
+#### Raisr Zoom Factor Tuning 1, 2
+- Valor 1:
+	- Front lens (Frontal):
+	- Main lens (Principal): 20
+	- Tele lens (Macro):
+	- Wide lens (Ultra Angular):
+	- ID4 (Preto e Branco): 20
+	- ID5 (Qualidade Máxima): 20
+- Valor 2:
+	- Front lens (Frontal):
+	- Main lens (Principal): 70
+	- Tele lens (Macro):
+	- Wide lens (Ultra Angular):
+	- ID4 (Preto e Branco): 70
+	- ID5 (Qualidade Máxima): 70
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sharpness > Raisr Zoom Factor Tuning 1, 2
 
-Valores incorretos causam perda de nitidez nos detalhes finos e repetição de pixels nas bordas da imagem.
+[Raisr](#Raisr2020) é um algoritmo da Google para ampliação de imagens, que melhora os detalhes e reduz o quadriculado no zoom.
+
+[Imagem comparação de fotos em zoom extremo de 8x em uma paisagem com montanhas distantes, uma com valores de Raisr iguais a 0, que apresenta um quadriculado visível no contorno das árvores, e outra com os valores recomendados, com os contornos das árvores mais definidos e sem quadriculado.]
+
+Os valores padrão de 10 e 40 não parecem ser suficientes pra evitar a criação de linhas artificiais em detalhes finos.
+
+[Imagem comparação de fotos em zoom 2x de um rosto com recorte ampliado num dos olhos, uma com valores padrão de 10 e 40, e linhas serrilhadas ao redor da pupila, e outra com valores recomendados de 20 e 70, e sem problemas ao redor da pupila.]
+
+O uso do Upscaling 2x sugere usar os valores de Raisr em dobro, por isso a recomendação dos valores mais próximos 20 e 70.
 ### Outras
 
 #### Sabre by Raw to Yuv
@@ -712,7 +810,7 @@ allow_widest_front
 - Valor: 500
 - Caminho: Configurações > Developer Settings > camera.ae.hdrplus_region_weight
 
-## Configurações opcionais
+## Extras
 Recursos que não fazem parte de Analog, mas podem ser ativados manualmente nas configurações.
 ### Compensação de Exposição
 Se as fotos em geral ficam mais escuras, ou mais claras, do que você gostaria, o recurso de Compensação de Exposição pode ajudar.
@@ -773,35 +871,38 @@ allow_raw_blur_front
 - Ativa o RAW no Retrato para a lentes Frontal.
 - Requer gouda.raw ligada.
 - Bug: O fundo desfocado fica superexposto.
-### Top Shot
-O recurso Top Shot grava um vídeo ao mesmo tempo que a foto é tirada no modo HDR+ simples. Depois de processada, esse vídeo é mostrado ao abrir a foto no Google Photos.
+### Melhor Foto
+O recurso Melhor Foto grava um vídeo junto ao se tirar uma foto no modo HDR+ Ativado, e permite extrair outras fotos dele.
+
+[Imagem da interface com a opção Top Shot Ativada no menu superior aberto.]
+
+A partir desse vídeo, a Google Camera seleciona quadros que dariam boas fotos e processa com o HDR+ Ativado.
+
+O vídeo fica salvo "dentro" da foto e só pode ser assistido ao abrir a foto no Google Fotos, onde é possível extrair os quadros processados.
+
+[Imagem da interface do Google Photos, com o vídeo tocando ao abrir a foto, e a lista de quadros nos detalhes da foto.]
+
+Com a opção Motion Photo ativada no Google Fotos, nos detalhes da foto são mostrados quadros selecionados pela Google Camera como "os melhores".
 
 [Imagem]
 
-Com a opção Motion Photo ativada no Google Photos, nos detalhes da foto são mostrados frames selecionados pela Google Camera como "os melhores".
+É possível exportar esses quadros com maior resolução (4K 4:3 com 2160 x 2880 pixels) e um efeito de HDR.
 
-[Imagem]
-
-É possível exportar esses frames com maior resolução (4K 4:3 com 2160 x 2880 pixels) e um efeito de HDR.
+Ele funciona só no modo HDR+ Ativado. É possível gravar um vídeo de Melhor Foto no HDR+ Melhorado segurando o obturador.
 #### enable_micro
 - Valor: Ligada
 - Caminho: Configurações > Developer Settings > camera.enable_micro
 
-Ativa o Top Shot.
+Ativa o Melhor Foto.
 
-Às vezes, o Google Photos pode não mostrar a seleção de frames nos detalhes da foto. Toque em Editar e role até a seção Motion para acessar esse recurso.
-
- enable_micro
-- Valor: Ligada
-- Caminho: Configurações > Developer Settings > camera.enable_micro
-
-
+Às vezes, o Google Fotos não mostra a seleção de quadros nos detalhes da foto. Nesse caso, toque em Editar e na seção Motion para acessar.
 #### mts_fast_hdr
 - Valor: Desligada
 - Caminho: Configurações > Developer Settings > camera.mts_fast_hdr
-Salva frames mais rápido, mas com menos qualidade, e por isso fica desligada.
 
+Salva quadros mais rápido, mas com menos qualidade, e por isso fica desligada.
 
+Motion photo
 
 
 ### Video 8K
@@ -862,20 +963,26 @@ As configurações:
 - Sun fix 2
 - Sun fix 3
 Se definidas como "Off (as in library), fazem a Google Camera fechar à forca.
+### Bug em Shot Noise Floor
+A opção Shot Noise Floor do Lib-Patcher é uma das melhores soluções pra redução de ruído com qualidade.
 
+[Imagem comparando uma foto sem a opção Shot Noise Floor, com ruído visível, e outra sem, com ruído reduzido.]
+
+Mas não é usada em Analog porque causa problemas graves em fotos com movimento, como quadrados coloridos e erros de fusão.
+
+[Foto de uma mão em movimento, com erros na imagem usando a opção Shot Noise Floor]
 ## Glossário
 - Artemis: Focus tracking
 - Cheetah: Timelapse
 - Cuttle: Astro
 - Gouda: Portrait
 - Lasagna: Motion Photo and Long Exposure mode, recursos que só funcionam nos Pixels
-- Micro: Motion photo
-- MTS: Topshot
+- Micro: Motion ([Melhor Foto](#(Melhor%20Foto)))
+- MTS: Top Shot ([Melhor Foto](#(Melhor%20Foto)))
 - PSL: Positive Shutter Lag
 - Shasta: Astro
 - Washington: Video Stabilization
-## Temp
-#### Defeitos em movimentos na Ultra Angular
-(Muito comum) A Lente Ultra Angular (UW) pode produzir defeitos na imagem de objetos em movimento, como quadrados coloridos e fantasmas. Pode ajudar desativar a opção Library Patch (LIBP).
-#### Defeitos em movimentos na Macro
-(Muito comum) A Lente Macro (M) pode produzir defeitos na imagem de objetos em movimento, como quadrados coloridos e fantasmas. Pode ajudar desativar a opção Library Patch (LIBP).
+- ZSL: Zero Shutter Lag
+## Changelog
+### v.0.1.0 - Inicial
+- Lista de recursos adicionados
