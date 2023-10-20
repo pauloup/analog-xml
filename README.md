@@ -5,11 +5,9 @@ Analog é um XML de configuração da Google Camera para os aparelhos POCO F4 GT
 
 Com visual inspirado em fotos de filme, tiradas com câmera analógica, Analog tem cores fortes, alta definição e granulado natural.
 ## Autoria
-Criado por Paulo José @paulotwain, 2022-2023.
+Criado por Paulo José @paulotwain, 2022-2023. Sou programador, artista e trabalho com fotografia e edição de imagem há 20 anos.
 
-Sou programador e artista, e trabalho com fotografia e edição de imagem há 20 anos.
-
-Conheci a Google Camera em 2018, e desde então gosto de testar novas versões e estudar as tecnologias usadas no app.
+Conheci a Google Camera em 2018, e desde então gosto de testar novas versões e conhecer as tecnologias usadas no app.
 ## Download
 Versão mais recente em [Releases](https://github.com/pauloup/analog-xml/releases).
 
@@ -166,26 +164,32 @@ O algoritmo de Super Res Zoom (Sabre) combina várias fotos para gerar uma só, 
 #### 64MP reais ou interpolados
 O sensor da lente Principal tem 64MP reais (9248 x 6944 pixels), mas a POCO só permite essa resolução no app da câmera nativa, e limita as fotos em 16MP (4624 x 3472 pixels) para apps de terceiros, como a Google Camera.
 
-A tecnologia que reduz a foto de 64MP para 16MP é chamada de [Pixel Binning](https://techlongreads.com/photography/pixel-binning-for-dummies/), e combina cada grupo de 4 pixels para formar 1 pixel.
+A tecnologia que reduz a foto de 64MP para 16MP é chamada de [Pixel Binning](#Pixel%20Binning), e combina cada grupo de 4 pixels para formar 1 pixel.
 
 Isso reduz o ruído digital e melhora a capitação de luz em cenas escuras, mas a resolução da foto cai pela metade*, e há menos detalhes.
 
 *\*Nota: Por convenção, se diz que a resolução da foto cai pela metade quando largura e altura são ambas reduzidas pela metade. Assim, o total de pixels da foto, que é o número de MegaPixels, cai para 1/4. Por isso, 16MP é "metade da resolução" de 64MP, mesmo sendo 1/4 do valor numérico.*
 
-Para superar essa limitação, Analog usa os algoritmos de Upscaling ([Rairs2020](https://blog.research.google/2016/11/enhance-raisr-sharp-images-with-machine.html)) e [Super Res Zoom](https://blog.research.google/2018/10/see-better-and-further-with-super-res.html?m=1) (Sabre) da Google Camera.
+Para superar essa limitação, Analog usa os recursos de Upscaling ([Raisr](#Raisr)) e Super Res Zoom ([Sabre](#Sabre)) da Google Camera.
 
 Isso aumenta as fotos de 16MP com binning disponíveis para fotos de 64MP interpolados, com qualidade comparável ou ainda superior aos 64MP reais da câmera nativa.
-[Comparação de uma foto com 64MP reais da câmera nativa, e uma com 64MP interpolados da Google Camera]
+
+[Comparação de uma foto com 64MP reais da câmera nativa, e uma com 64MP interpolados da Google Camera.]
+
 *JPG: Nativa 64MP reais vs Google Camera 64MP interpolados*.
 
 Aliás, os 64MP da câmera nativa nem sempre são reais. Em situações mais escuras, a câmera nativa também usa os 16MP com pixel binning, e aumenta a imagem pra 64MP, com bem menos qualidade que a Google Camera.
+
 [Comparação de uma foto com 64MP interpolados da câmera nativa, e uma com 64MP interpolados da Google Camera]
+
 *JPG: Nativa 64MP interpolados vs Google Camera 64MP interpolados*.
 
 O mesmo processo é usado nas outras lentes para dobrar a resolução e produzir fotos com mais qualidade que na câmera nativa.
+
 [Imagem das outras 3 lentes com o dobro de resolução em comparação com a câmera nativa.]
 
 Opcional: Esse recurso é ligado por padrão. Desative a opção Alta Resolução (HIRES) para desligar esse recurso e tirar fotos na resolução padrão de 16MP na lente Principal, 8MP na Ultra Angular, 2MP na Macro e 5MP na Frontal.
+
 [Imagem da opção HIRES desativada]
 ### Granulado natural
 Granulado de filme, como numa câmera analógica, preservando o ruído natural da foto.
@@ -203,6 +207,7 @@ Assim como uma fotografia analógica tirada em câmera de filme, a foto do Analo
 Porém, pode ser útil ter um mínimo de remoção de ruído, e por isso há um XML variação chamado Analog-Smooth que abre mão do granulado e usa remoção de ruído, mas tentando preservar todas as outras características do Analog.
 
 Opcional: Esse recurso é ligado por padrão. Desative a opção Library Patch (LIBP) para desligar esse recurso e usar a remoção de ruído padrão da Google Camera. Outras características do Analog também serão desativadas, como as cores fortes.
+
 [Imagem da opção HIRES desativada]
 ### Cor natural
 Comparar balanço de branco frio (celular, digital) e quente (camera, analógico)
@@ -628,10 +633,12 @@ O sensor captura 3 canais de cor, vermelho, verde e azul, mas geralmente existe 
 [Gráfico da sensibilidade dos canais, verde e azul se sobrepondo]
 
 https://stella.com.br/blog/temperaturas-de-cor-e-as-percepcoes-humanas
+### Pixel Binning
+[Pixel Binning](https://techlongreads.com/photography/pixel-binning-for-dummies/)
 ### Sabre
-
+[Super Res Zoom](https://blog.research.google/2018/10/see-better-and-further-with-super-res.html?m=1) (Sabre)
 ### Raisr
-
+Upscaling ([Rairs2020](https://blog.research.google/2016/11/enhance-raisr-sharp-images-with-machine.html)) 
 ## Configurações
 Abaixo estão as principais configurações da Google Camera usadas em Analog.
 
