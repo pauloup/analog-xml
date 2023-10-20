@@ -37,25 +37,37 @@ Incluir:
 - Zoom digital
 - Astrofotografia
 ## Visão geral
-Analog tenta retratar a realidade em fotos definidas e intensas, resgatando o visual das fotos de filme, feitas com câmera analógica.
+Analog busca retratar a realidade em fotos definidas e intensas, resgatando o visual das fotos de filme, feitas com câmera analógica.
 
 A tecnologia da Google Camera ajuda a enfrentar os desafios da fotografia digital, como perda de detalhes e textura, e cores apagadas.
 
 [Imagem comparando uma fotografia digital e uma analógica. A fotografia digital apresenta perda de detalhes, um visual de pintura a óleo, e cores planas sem contraste. A fotografia analógica tem granulado natural do filme, preserva detalhes e tem cores intensas.]
 
 A qualidade técnica de uma imagem pode ser comparada, mas a beleza é sempre subjetiva. Analog é tão bom quanto qualquer outro XML, basta atender ao que se busca.
-
-Principais [Recursos](#Recursos):
+### Principais recursos
 - [4 Lentes](#4%20Lentes): Todas as lentes otimizadas para fotos similares e consistentes.
 - [64MP](#64MP) - Resolução em dobro para nitidez máxima e flexibilidade de recorte.
 - [Granulado natural](#Granulado%20natural) - Redução de ruído mínima para preservar detalhes e textura.
 - [Cor natural](#Cor%20natural): Balanço de branco quente para destacar tons de pele, sem a frieza digital.
 - [Luz natural](#Luz%20natural): Fotos escuras e intensas, com visual de cinema e sombras preservadas.
 - [Vídeo](#Vídeo): Estabilização, câmera lenta e 4K 60fps.
+### Outros recursos
+- [Visão Noturna](#Visão%20Noturna)
+- [Retrato](#Retrato)
+- [Preto e Branco](#Preto%20e%20Branco)
+- [Qualidade Máxima](#Qualidade%20Máxima)
+- [HDR+](#HDR+)
+- [RAW](#RAW)
+- [Melhor Foto](#Melhor%20Foto)
+- [Luz real](#Luz%20real)
+- [Vinheta real](#Vinheta%20real)
+- [Panorama](#Panorama)
+- [Photo Sphere](#Photo%20Sphere)
+- [Google Lens](#Google%20Lens)
 
-Outros: [Visão Noturna](#Visão%20Noturna), [Retrato](#Retrato), [Preto e Branco](#Preto%20e%20Branco), [Qualidade Máxima](#Qualidade%20Máxima), [HDR+ Melhorado](#HDR+%20Melhorado), [RAW](#RAW), [Luz real](#Luz%20real), [Vinheta real](#Vinheta%20real), [Panorama]($Panorama), [Photo Sphere](#Photo%20Sphere) e [Google Lens](#Google%20Lens).
-
-Além de [Recursos](#Recursos), outras seções organizam as informações sobre Analog:
+Veja todos na seção [Recursos](#Recursos).
+### Outras informações
+Esse documento organiza outras informações sobre Analog em sessões:
 
 [Motivação](#Motivação) apresenta a intenção, os desafios e as referências usadas na criação de Analog.
 
@@ -79,7 +91,7 @@ Além de [Recursos](#Recursos), outras seções organizam as informações sobre
 
 [Glossário](#Glossário) tem palavras especiais das configurações, e termos técnicos comuns nas discussões sobre a Google Camera.
 
-Por fim, [Changelog](#Changelog) registra as atualizações no desenvolvimento de Analog, de forma técnica.
+[Changelog](#Changelog) registra as atualizações no desenvolvimento de Analog, de forma técnica.
 ## Motivação
 
 Analog foi criado unindo técnica e arte em fotos realistas, como um registro histórico, mas com um visual marcante, que já agrada ao meu gosto e não preciso editar pra postar.
@@ -87,6 +99,11 @@ Analog foi criado unindo técnica e arte em fotos realistas, como um registro hi
 A maior referência para o meu trabalho em Analog foi o curso [Fotografia Digital](https://www.youtube.com/playlist?list=PL7ddpXYvFXspUN0N-gObF1GXoCA-DA-7i) de Marc Levoy, um dos criadores da Google Camera.
 
 Os grupos de discussão [SGCam](https://t.me/googlecameramodbyshamimdg), [AGC](https://t.me/AGC_AND_MORE) e [BSG](https://t.me/PublicGroup_MGC_BSG) compartilham experiências únicas sobre o uso da Google Camera, e também foram referência.
+
+### Problemas do digital 
+Com o HDR, as fotos perdem contraste e as cores ficam planas, como nessa comparação do Pixel 8 Pro e uma câmera Sony A7 IV.
+
+https://youtu.be/n8nSeVniXSY
 
 ## Interface
 A interface mostra a imagem da câmera no centro da tela. Os Modos ficam abaixo, as Lentes na direita e as Opções acima.
@@ -134,17 +151,24 @@ A seleção da lente Frontal fica à esquerda do botão de disparo:
 	- Mais configurações:
 	- 
 ## Recursos
-Analog busca ter características de fotos de filme, como contraste intenso, alta nitidez nos detalhes e granulado natural preservado.
-
-Principais [Recursos](#Recursos):
-- [4 Lentes](#4%20Lentes): Todas as lentes otimizadas para fotos similares e consistentes.
-- [64MP](#64MP) - Resolução em dobro para nitidez máxima e flexibilidade de recorte.
-- [Granulado natural](#Granulado%20natural) - Redução de ruído mínima para preservar detalhes e textura.
-- [Cor natural](#Cor%20natural): Balanço de branco quente para destacar tons de pele, sem a frieza digital.
-- [Luz natural](#Luz%20natural): Fotos escuras e intensas, com visual de cinema e sombras preservadas.
-- [Vídeo](#Vídeo): Estabilização, câmera lenta e 4K 60fps.
-
-Outros: [Visão Noturna](#Visão%20Noturna), [Retrato](#Retrato), [Preto e Branco](#Preto%20e%20Branco), [Qualidade Máxima](#Qualidade%20Máxima), [HDR+ Melhorado](#HDR+%20Melhorado), [RAW](#RAW), [Luz real](#Luz%20real), [Vinheta real](#Vinheta%20real), [Panorama]($Panorama), [Photo Sphere](#Photo%20Sphere) e [Google Lens](#Google%20Lens).
+- [4 Lentes](#4%20Lentes)
+- [64MP](#64MP)
+- [Granulado natural](#Granulado%20natural)
+- [Cor natural](#Cor%20natural)
+- [Luz natural](#Luz%20natural)
+- [Vídeo](#Vídeo)
+- [Visão Noturna](#Visão%20Noturna)
+- [Retrato](#Retrato)
+- [Preto e Branco](#Preto%20e%20Branco)
+- [Qualidade Máxima](#Qualidade%20Máxima)
+- [HDR+](#HDR+)
+- [RAW](#RAW)
+- [Melhor Foto](#Melhor%20Foto)
+- [Luz real](#Luz%20real)
+- [Vinheta real](#Vinheta%20real)
+- [Panorama](#Panorama)
+- [Photo Sphere](#Photo%20Sphere)
+- [Google Lens](#Google%20Lens)
 ### 4 Lentes
 Todas as lentes configuradas: Lente Principal, Ultra Angular, Macro e Frontal.
 [Imagem comparando fotos das 4 lentes]
@@ -602,25 +626,35 @@ Isso é o nosso Balanço de Branco. Nossa mente equilibra a intensidade das core
 Nem sempre o nosso balanço de branco concorda com o de outras pessoas, como mostrou o famoso [vestido branco e dourado](https://g1.globo.com/tecnologia/noticia/2015/02/azul-e-preto-ou-branco-e-dourado-vestido-polemico-quebra-internet.html).
 
 [Imagem de um meme do vestido branco e dourado ou preto e azul, que dividiu opiniões em 2015]
-#### AWB do sistema
-Toda câmera digital possui um recurso de Balanço de Branco Automático, que faz a mesma coisa que a nossa visão.
+#### AWB nas câmeras
+Toda câmera digital possui o recurso de Balanço de Branco Automático (AWB), que faz a mesma coisa que a nossa visão.
 
 Esse recurso observa a imagem captada pelo sensor, identifica possíveis áreas brancas e ajusta os canais de cor pra deixa-las neutras.
 
 [Imagem comparando uma foto antes do Balanço de Branco, com uma luz verde intensa cobrindo toda a imagem, e a mesma foto depois do Balanço de Branco, com cores mais corretas e o branco neutro]
 
-O Balanço de Branco depende das cores captadas pelo sensor, e é muito sensível à qualidade do sensor e ao conteúdo da cena.
+O Balanço de Branco Automático depende das cores captadas pelo sensor, e é muito sensível ao modelo do sensor e ao conteúdo da cena.
 
-Cada sensor pode precisar de ajustes específicos de Balanço de Branco para representar as cores com precisão.
+Cada modelo de sensor precisa de ajustes específicos de Balanço de Branco Automático para representar as cores com precisão.
 
 O POCO F4 GT possui 4 lentes, com sensores da Sony, Omnivision e GalaxyCore. Por isso, as [lentes podem apresentar cores diferentes](#Lentes%20inconsistentes).
+#### Dificuldade no AWB 
+Cenas com objetos de cores fortes ocupando uma grande área da foto podem confundir o 
+Balanço de Branco Automático.
 
-O Balanço de Branco do sistema, o mesmo usado na câmera nativa, é usado quando a [opção AWB](#Opção%20AWB) está desativada.
+O Balanço de Branco Automático usa áreas brancas como referência, então adicionar objetos brancos na cena pode ajudar.
 
-Ele costuma equilibrar bem as cores, especialmente em cenas na sombra, mas pode deixar cores amareladas e saturadas ao sol.
+[Imagem comparando uma foto de uma blusa vermelha bem próxima, que ocupa quase toda a foto e confunde o AWB, deixando o vermelho apagado e esverdeado, e outra foto da mesma blusa, mas com uma parede branca aparecendo ao fundo, o que ajuda o AWB e deixa a blusa no tom de vermelho correto.]
+#### AWB do Sistema
+O Balanço de Branco Automático do sistema, o mesmo usado na câmera nativa, é usado quando a [opção AWB](#Opção%20AWB) está desativada.
 
-[Imagem comparando fotos usando o Balanço de Branco do sistema, uma com uma pessoa na sombra, dentro de casa, e cores corretas, e outra com a mesma pessoa no sol com pele amarelada e saturada.]
+Ele costuma equilibrar bem as cores, especialmente em cenas na sombra, mas pode deixar cores muito saturadas em cenas ao sol.
+
+[Imagem comparando fotos da câmera nativa usando o Balanço de Branco do sistema, uma com uma pessoa na sombra, dentro de casa, e cores corretas, e outra com a mesma pessoa no sol, com a pele amarelada e saturada.]
 #### AWB da Google Camera
+A Google Camera permite escolher um Balanço de Branco Automático diferente, que é usado quando a [opção AWB](#Opção%20AWB) está ativada.
+
+
 
 Outro recurso aplicado antes do Balanço de Branco é o [CCT](#CCT), que ajusta a influência de um canal no outro para melhorar as cores.
 
@@ -649,10 +683,15 @@ Quando mudar uma configuração, feche e abra o app antes de fotografar, para ga
 As mudanças se mantém ao fechar e abrir o app, mas serão perdidas ao importar uma nova configuração.
 
 Para salvar as mudanças numa nova configuração, acesse o menu Configurações Adicionais com um toque longo no botão Selfie, o menu Configs settings, e use a opção Config Save.
-### Balanço de Branco do Sistema
+### Config Balanço de Branco do Sistema
 Valores de CCT copiados do sistema 
-### Balanço de Branco Automático
+### Config Balanço de Branco Automático
 Combinação dos melhores balanços de branco
+
+Alternativas sugeridas:
+- 26.Samsung S5KGM1: Tom de branco mais avermelhado
+- 39.Samsung S5KGM1 (RN7): Tom de branco mais azulado
+- 49.Samsung S5KGM2 (RN9S): Tom de branco mais esverdeado
 ### Correção de sombras esverdeadas na Principal
 A lente Principal pode gerar áreas de sombras com tons esverdeados, com menos qualidade, em fotos tiradas no modo HDR+ Melhorado.
 
@@ -770,14 +809,14 @@ Valores incorretos no Sabre Burst Merge 3 causam perda de nitidez nos detalhes f
 	- Front lens (Frontal):
 	- Main lens (Principal): 20
 	- Tele lens (Macro):
-	- Wide lens (Ultra Angular):
+	- Wide lens (Ultra Angular): 20
 	- ID4 (Preto e Branco): 20
 	- ID5 (Qualidade Máxima): 20
 - Valor 2:
 	- Front lens (Frontal):
 	- Main lens (Principal): 70
 	- Tele lens (Macro):
-	- Wide lens (Ultra Angular):
+	- Wide lens (Ultra Angular): 128
 	- ID4 (Preto e Branco): 70
 	- ID5 (Qualidade Máxima): 70
 - Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sharpness > Raisr Zoom Factor Tuning 1, 2
@@ -929,6 +968,8 @@ Estabilização
 Stream Video mode
 - Valor: 262144 - OpMode (Default)
 - Caminho: Configurações > Additional Settings > Stream Config > Main cam > Video mode
+
+Também funciona com Stream 32797 - Video EIS 8K
 ### Balanço de branco manual
 Para ativar o balanço de branco manual:
 - Ativar a configuração White Balance
