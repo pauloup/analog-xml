@@ -14,6 +14,7 @@ Conheci a Google Camera em 2018, e desde então gosto de testar novas versões e
 Versão mais recente em [Releases](https://github.com/pauloup/analog-xml/releases).
 
 Feito para a Google Camera 8.4 do Shamim: [SGCAM_8.4.400.42.XXX_STABLE_V43_ENG.apk](https://t.me/googlecameramodbyshamim/789?single)
+
 A versão ENG é recomendada para ativar o recurso [Google Lens](#Google%20Lens), mas a versão principal ou a SNAPCAM também podem ser usadas.
 ## Instalação
 Copie o XML para a pasta *SGCAM/XML*. Abra o app, dê dois toques no espaço vazio ao lado do botão de disparo, e importe a configuração.
@@ -66,7 +67,7 @@ Além de [Recursos](#Recursos), outras seções organizam as informações sobre
 
 [Dicas](#Dicas) fala de situações que precisam de outros apps, como gravação de vídeo avançada, ou de técnicas, como astro e macrofotografia.
 
-[XMLs adicionais](#XMLs%20adicionais) traz versões alternativas, como o Analog-Soft, que reduz a nitidez digital para uma foto com detalhes suaves e naturais.
+[Alternativas](#Alternativas) traz XMLs adicionais, como o Analog-Flat, que reduz contraste e saturação  para fotos com cores planas, boas para editar.
 
 [Especificações](#Especificações) reúne dados técnicos das lentes do POCO F4 GT e do Redmi K50 Gaming, como abertura, modelo do sensor, e distância de foco.
 
@@ -243,7 +244,7 @@ Filtro [ortocromático](https://thedarkroom.com/orthochromatic-vs-panchromatic-f
 
 Dica: ativar a opção [RAW](#RAW) pra salvar a foto original em cores.
 
-Para usar esse recurso em outras lentes, veja [XMLs Adicionais: Analog-Mono](#Analog-Mono).
+Para usar esse recurso em outras lentes, veja [Alternativas: Analog-Mono](#Analog-Mono).
 
 Não funciona no Vídeo, Panorama e Photo Sphere
 ### Qualidade Máxima
@@ -430,8 +431,8 @@ Estas são as configurações pra deixar as fotos da câmera nativa mais parecid
 - Saturação +1
 - Contraste -1
 - 64MP
-## XMLs adicionais
-
+## Alternativas
+XMLs com versões alternativas de Analog.
 ### Analog-Mono
 Preto e Branco intenso em todas as lentes...
 ### Analog-Max
