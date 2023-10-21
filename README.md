@@ -650,7 +650,8 @@ O Balanço de Branco Automático do sistema, o mesmo usado na câmera nativa, é
 
 Ele costuma equilibrar bem as cores, especialmente em cenas na sombra, mas pode deixar cores muito saturadas em cenas ao sol.
 
-![](images/source/analog-xml.svg)
+![](images/source/balanco-de-branco-automatico-do-sistema-na-sombra-no-sol.svg)
+![](../../raw/main/images/source/balanco-de-branco-automatico-do-sistema-na-sombra-no-sol.svg)
 [Imagem comparando fotos da câmera nativa usando o Balanço de Branco do sistema, uma com uma pessoa na sombra, dentro de casa, e cores corretas, e outra com a mesma pessoa no sol, com a pele amarelada e saturada.]
 #### AWB da Google Camera
 A Google Camera permite escolher um Balanço de Branco Automático diferente, que é usado quando a [opção AWB](#Opção%20AWB) está ativada.
