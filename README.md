@@ -235,6 +235,8 @@ Opcional: Esse recurso é ligado por padrão. Desative a opção Library Patch (
 [Imagem da opção HIRES desativada]
 ### Cor natural
 Comparar balanço de branco frio (celular, digital) e quente (camera, analógico)
+#### Saturação subtrativa
+Menos saturação RGB e mais saturação HSV
 ### Luz natural
 Visual flat vs alto contraste 
 #### Sombras preservadas
@@ -668,6 +670,9 @@ O sensor captura 3 canais de cor, vermelho, verde e azul, mas geralmente existe 
 
 [Gráfico da sensibilidade dos canais, verde e azul se sobrepondo]
 
+Assim, o canal verde acaba capturando um pouco de luz vermelha e de luz verde. Essa sobreposição
+A sensibilidade de cada canal de cor às frequências de luz, ou cores
+
 https://stella.com.br/blog/temperaturas-de-cor-e-as-percepcoes-humanas
 ### Pixel Binning
 [Pixel Binning](https://techlongreads.com/photography/pixel-binning-for-dummies/)
@@ -675,6 +680,11 @@ https://stella.com.br/blog/temperaturas-de-cor-e-as-percepcoes-humanas
 [Super Res Zoom](https://blog.research.google/2018/10/see-better-and-further-with-super-res.html?m=1) (Sabre)
 ### Raisr
 Upscaling ([Rairs2020](https://blog.research.google/2016/11/enhance-raisr-sharp-images-with-machine.html)) 
+
+The Challenges of Digital Zoom
+Digital zoom is tough because a good algorithm is expected to start with a lower resolution image and "reconstruct" missing details reliably — with typical digital zoom a small crop of a single image is scaled up to produce a much larger image. Traditionally, this is done by linear interpolation methods, which attempt to recreate information that is not available in the original image, but introduce a blurry- or “plasticy” look that lacks texture and details. In contrast, most modern single-image upscalers use machine learning (including our own earlier work, RAISR). These magnify some specific image features such as straight edges and can even synthesize certain textures, but they cannot recover natural high-resolution details. While we still use RAISR to enhance the visual quality of images, most of the improved resolution provided by Super Res Zoom (at least for modest zoom factors like 2-3x) comes from our multi-frame approach.
+
+https://blog.research.google/2018/10/see-better-and-further-with-super-res.html?m=1
 ## Configurações
 Abaixo estão as principais configurações da Google Camera usadas em Analog.
 
@@ -1036,4 +1046,36 @@ Mas não é usada em Analog porque causa problemas graves em fotos com movimento
 - ZSL: Zero Shutter Lag
 ## Changelog
 ### v.0.1.0 - Inicial
-- Lista de recursos adicionados
+Adições:
+- 4 lentes configuradas com ampliação: Principal 64MP (2x), Ultra Angular 32MP (2x), Macro 30MP (4x) e Frontal 20MP (2x)
+- HDR+ Melhorado com número de quadros automático, para fotos rápidas e nítidas, e sem ZSL, para menos ruído.
+- Correção de exposição, para fotos rápidas, com menos ruído, e corretas no sol
+- Interface do Pixel 2, para redução de ruído com mais qualidade
+- Modelo HDR do Pixel 4 XL, para cores naturais e mais definição nos detalhes
+- HEXAGON ativado, para um processamento rápido, sem perda de qualidade.
+- SABRE merge em fotos com e sem zoom, para detalhes mais definidos e redução de ruído melhor
+- Algoritmo RAISR para ampliação em 64MP e zoom.
+- Controle lógico em Remosaicked para um bom demosaicing, com detalhes definidos e boa redução de ruído
+- Modelo de redução de ruído do sistema
+- Redução de ruído mínima no Lib-Patcher, para preservar o granulado natural
+- Nitidez artificial reduzida, para fotos mais naturais, com menos ruído e sem artefatos
+- Balanço de Branco Automático do Pixel 4 com a opção AWB ligada, para tons quentes e naturais da Google Camera.
+- Balanço de Branco Automático do sistema com a opção AWB desligada, com CCT obtido do sistema, para correção de cores precisa
+- Saturação Subtrativa, para cores intensas
+- Opção RAW + JPG
+- Opção LDR (Low Dynamic Range), para fotos sem o visual HDR, com sombras naturais.
+- Opção SHAD, para manter vinheta, a sombra natural da lente nas bordas do sensor.
+- Detecção de rosto com círculo indicativo
+- Top Shot com vídeo em 2448p 3:4
+- Melhoria de fala no vídeo da Frontal
+- Vídeo principal em até 4K 60fps com EIS e 8K 30fps sem EIS
+- Câmera lenta em 1080p 120fps e 720p 240fps
+- Timelapse em 8K a 1x, 5x, 10x, 30x e 100x
+- Vídeo sem EIS no modo Qualidade Máxima
+- Modo Retrato salva junto a foto original
+- Opção de embelezamento no Modo Retrato e lente Frontal
+- Opção de flash da tela na lente Frontal
+- Modo Preto e Branco ortocromático, que reduz a absorção do vermelho, usado em filmes com visual antigo, como O Farol
+- Modo Qualidade Máxima com 53 quadros, para cenas difíceis que exigem o máximo da remoção de ruído
+- Focos ajustados nas opções Próximo, Distante e Infinito do modo Visão Noturna
+- Modo Google Lens, para traduzir textos com a câmera, ou ler QR codes
