@@ -235,6 +235,21 @@ Opcional: Esse recurso é ligado por padrão. Desative a opção Library Patch (
 [Imagem da opção HIRES desativada]
 ### Cor natural
 Comparar balanço de branco frio (celular, digital) e quente (camera, analógico)
+
+#### Redução do ruído verde
+O AWB do Pixel 4 tem menos intensidade no canal verde, o que ajuda a reduzir o ruído verde, um problema comum em Astrofotografia.
+
+[Comparação de uma foto com AWB 19.Sony IMX686, com tom médio mais verde, e outra com AWB 4.Google Pixel 4, mais neutra. ]
+
+Como o HDR+ Melhorado combina várias quadros subexpostos, as fotos acabam o com o mesmo problema da Astrofotografia.
+
+Exposições escuras, com pouca luz, ficam com mais ruído nos canais vermelho e azul, e o canal verde se destaca, deixando o ruído verde.
+
+[Comparação de um detalhe com zoom nos pixels das sombras de uma foto, com os canais RGB separados e sua combinação. Os canais vermelho e verde tem mais ruído, enquanto o verde é mais uniforme. O resultado é uma combinação com um tom verde sutil.]
+
+Esse problema não é solucionado com a redução de ruído de cor, porque ela não corrige a diferença de luminosidade média nos canais.
+
+O balanço de branco automático pode ajudar a reduzir o canal verde, equilibrar o tom e deixar a imagem com mais qualidade aparente.
 #### Saturação subtrativa
 Menos saturação RGB e mais saturação HSV
 ### Luz natural
@@ -275,7 +290,7 @@ Filtro [ortocromático](https://thedarkroom.com/orthochromatic-vs-panchromatic-f
 
 Dica: ativar a opção [RAW](#RAW) pra salvar a foto original em cores.
 
-Para usar esse recurso em outras lentes, veja [Alternativas: Analog-Mono](#Analog-Mono).
+Para usar esse recurso em outras lentes, veja [Alternativas: Analog-BW](#Analog-BW).
 
 Não funciona no Vídeo, Panorama e Photo Sphere
 ### Qualidade Máxima
@@ -323,6 +338,8 @@ Cada lente possui um modelo de sensor diferente, que produz fotos com as caracte
 (Comum) Fotos processadas podem ficar mais escuras do que apareciam na tela. Isso evita que áreas claras estourem, mas pode ser indesejável. Pode ajudar:
 - Tocar a imagem na tela e aumentar a exposição;
 - Ou mudar o enquadramento para reduzir áreas de luz forte, como uma janela ou a luz do sol.
+#### Alcance dinâmico menor na exposição por toque
+.
 #### Ruído alto
 #### Cores muito saturadas
 (Raro) As cores podem ficar incorretas ou muito saturadas em alguns situações. Isso vem da escolha artística por cores fortes. Pode ajudar:
@@ -399,6 +416,19 @@ Capinhas podem causar flare, principalmente na lente Ultra Angular.
 Modulo magisk Pro Rec
 ### Gravação de vídeo avançada
 Google Camera não é pra vídeo. Indicar apps para gravar vídeo com o mesmo nível de controle das fotos Google Camera...
+
+mcpro24fps - colocar os testes de resolução, taxa de quadros, expo manual e automática, q fiz para o dev.
+
+Proshot - qualidade e facilidade
+
+Motioncam - gravação de video em RAW
+
+### Estabilização Eletrônica
+Gyroflow, rolling shutter 33.99ms
+Sensor Logger, max frequently, export gyro as csv
+Video de calibração: Mcpro24fps, preto e branco, alto contraste, remoção de ruído e nitidez
+Perfis download.
+
 ### Compartilhar com qualidade
 Comparar a foto postada direto pelo Instagram fom a editada no Photo Editor
 ### Macro na Principal
@@ -464,16 +494,17 @@ Estas são as configurações pra deixar as fotos da câmera nativa mais parecid
 - 64MP
 ## Alternativas
 XMLs com versões alternativas de Analog.
-### Analog-Mono
+### Analog-BW
 Preto e Branco intenso em todas as lentes...
-### Analog-Max
+### Analog-HQ
 Máxima qualidade com 48 quadros em todas as lentes...
-### Analog-Smooth
+### Analog-Denoise
 Com remoção de ruído...
 ### Analog-Flat
 Menos saturação, flat...
 ### Analog-Soft
 Menos nitidez...
+
 
 ## Especificações
 O hardware do POCO F4 GT/Redmi K50 Gaming tem vantagens e desvantagens no uso da Google Camera e apps de fotografia:
@@ -512,6 +543,7 @@ Especificações completas:
 - Velocidade: 1/10000s - 36s
 - Formatos: JPG + DNG
 - Zoom máximo: 16x
+- Duração do Rolling Shutter: 34ms
 #### Focagem
 - Foco: Automático e Manual
 - Modo de focagem: PDAF
@@ -695,16 +727,16 @@ Quando mudar uma configuração, feche e abra o app antes de fotografar, para ga
 As mudanças se mantém ao fechar e abrir o app, mas serão perdidas ao importar uma nova configuração.
 
 Para salvar as mudanças numa nova configuração, acesse o menu Configurações Adicionais com um toque longo no botão Selfie, o menu Configs settings, e use a opção Config Save.
-### Config Balanço de Branco do Sistema
+### Balanço de Branco do Sistema Configs
 Valores de CCT copiados do sistema 
-### Config Balanço de Branco Automático
+### Balanço de Branco Automático Configs
 Combinação dos melhores balanços de branco
 
 Alternativas sugeridas:
 - 26.Samsung S5KGM1: Tom de branco mais avermelhado
 - 39.Samsung S5KGM1 (RN7): Tom de branco mais azulado
 - 49.Samsung S5KGM2 (RN9S): Tom de branco mais esverdeado
-### Correção de sombras esverdeadas na Principal
+### Correção de sombras esverdeadas na Principal Configs
 A lente Principal pode gerar áreas de sombras com tons esverdeados, com menos qualidade, em fotos tiradas no modo HDR+ Melhorado.
 
 Esse problema aparece quando os quadros tem uma exposição muito baixa, geralmente usada pelo HDR+ Melhorado para recuperar áreas estouradas em cenas com muita luz.
@@ -757,7 +789,7 @@ Expo-correction
 - Valor: 2.000
 - Caminho: Configurações > Additional Settings > Lib-patcher > Main lens > Exposure > Expo-correction
 - 
-### Correção de aberração cromática
+### Correção de aberração cromática Configs
 
 #### Better Color Wiener Sabre
 - Valor: 
@@ -770,7 +802,7 @@ Reduz aberração cromática em toda a área da imagem.
 
 camera.ddepth_rear
 camera.ddepth_front
-### Correção de combinação de quadros com movimento
+### Correção de combinação de quadros com movimento Configs
 #### Sabre Motion Fix
 - Valor:
 	- Front lens (Frontal):
@@ -784,25 +816,25 @@ camera.ddepth_front
 Corrige problemas na combinação de quadros, como cores incorretas em regiões com movimento, e ruído de cor em detalhes finos.
 
 [Imagem comparando fotos com Sabre Motion Fix de 20332e e Off (as in Library)]
-### Máximo de quadros no HDR+ Melhorado
+### Máximo de quadros no HDR+ Melhorado Configs
 Pra descobrir a quantidade máxima de quadros no HDR+ Melhorado, coloquei um valor grande na configuração de quadros, tirei uma foto com a opção logcat ativada e olhei no arquivo de log que a partir do 54, todos os quadros foram pulados pelo sistema.
-### Nitidez
+### Nitidez Configs
 #### Sabre Burst Merge 1, 2, 3
-- Valor 1:
+- Sabre Burst Merge 1:
 	- Front lens (Frontal):
 	- Main lens (Principal): 3.00
 	- Tele lens (Macro):
 	- Wide lens (Ultra Angular):
 	- ID4 (Preto e Branco): 3.00
 	- ID5 (Qualidade Máxima): 3.00
-- Valor 2:
+- Sabre Burst Merge 2:
 	- Front lens (Frontal):
 	- Main lens (Principal): 5.0
 	- Tele lens (Macro):
 	- Wide lens (Ultra Angular):
 	- ID4 (Preto e Branco): 5.0
 	- ID5 (Qualidade Máxima): 5.0
-- Valor 3:
+- Sabre Burst Merge 3:
 	- Front lens (Frontal):
 	- Main lens (Principal): 1.000 (Default)
 	- Tele lens (Macro):
@@ -842,18 +874,41 @@ Os valores padrão de 10 e 40 não parecem ser suficientes pra evitar a criaçã
 [Imagem comparação de fotos em zoom 2x de um rosto com recorte ampliado num dos olhos, uma com valores padrão de 10 e 40, e linhas serrilhadas ao redor da pupila, e outra com valores recomendados de 20 e 70, e sem problemas ao redor da pupila.]
 
 O uso do Upscaling 2x sugere usar os valores de Raisr em dobro, por isso a recomendação dos valores mais próximos 20 e 70.
-### Outras
+
+### Redução de Ruído Configs
+Lumanoise faz o mesmo q better color winer sabre, e afeta o ruído de cor. Better parece melhor
+
+### Luma A, B
+- Valores:
+    - Front lens (Frontal): Off (as in library)
+    - Main lens (Principal): Off (as in library)
+    - Tele lens (Macro):Off (as in library)
+    - Wide lens (Ultra Angular): 0
+    - ID4 (Preto e Branco): 0
+    - ID5 (Qualidade Máxima): Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Main settings > Luma 1, 2
+- Controla a intensidade da remoção de ruído no canal de Luminosidade.
+- As lente Ultra Angular e Macro precisam de valor 0 para desativar a remoção de ruído.
+- As lente Principal e Frontal não precisam de ajuste. Outras configurações são suficientes.
+### Outras Configs
 
 #### Sabre by Raw to Yuv
 - Valor: 0.125
 - Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sabre > Sabre by Raw to Yuv
-
-Cores mais preservadas nos detalhes finos.
+- Cores mais preservadas nos detalhes finos.
+#### Ae target fps range
+- Manual ae target fps rate: Ligada
+- Lower ae target fps rate: 7
+- Upper ae target fps rate: 30
+- Caminho: Configurações > Additional Settings > ISO/Exposure Time HDR+ > ISO/Exposure Time > Ae target fps range
+- Controla o alcance de frames da exposição automática (AE).
+- Os valores copiados do sistema são o mínimo 7 fps e o máximo 30 fps.
+- O valor mínimo 7 permite que a exposição automática use um tempo de exposição mais lento de até 1/7s, o que deixa a imagem do visor mais clara no Modo Visão Noturna.
+- Não altera o tempo de exposição da foto, apenas da imagem no visor, que depende do alcance de frames da exposição automática.
 #### allow_widest_front
 - Valor: Ligada
 - Caminho: Configurações > Developer Settings > camera.gouda.allow_widest_front
-
-Evita que a lente Frontal inicie com o zoom 1.2 já ativado.
+- Evita que a lente Frontal inicie com o zoom 1.2 já ativado.
 #### pck_large_yuv
 - Valor: Desligada
 - Caminho: Configurações > Developer Settings > camera.pck_large_yuv
@@ -868,7 +923,63 @@ No modo HDR+ desligado, processa a versão RAW da foto com a Google Camera, em v
 allow_widest_front
 - Valor: 500
 - Caminho: Configurações > Developer Settings > camera.ae.hdrplus_region_weight
+### Analog-BW Configs
+### Analog-HQ Configs
+### Analog-Denoise Configs
 
+#### Ligar remoção de ruído em Main Settings
+- Spatial A: 2
+- Spatial B: 3
+- Luma A: 2
+- Luma B: 1.0 (Default)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Main Settings
+#### Ligar remoção de ruído em Sabre
+- Sabre by Raw to Yuv: Off (as in library)
+- Sabre denoise control (-31 turns it off (Sabre noise artifacts): Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sabre
+#### Ligar remoção de ruído em Processing
+- Noise Processing: 
+	- Front lens (Frontal): On
+	- Main lens (Principal): On
+	- Tele lens (Macro): Off
+	- Wide lens (Ultra Angular): Off
+	- ID4 (Preto e Branco): On
+	- ID5 (Qualidade Máxima): On
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Processing
+#### Ligar remoção de ruído em Noise reduction
+- Smoothness: Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Noise reduction
+### Analog-Flat Configs
+#### Desligar contraste em Tone Curve
+- Select Active Mode: Preset
+- Select Curve Preset: Burial
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Set Curves > Tone Curve
+#### Desligar contraste em Gamma Curve
+- Select Active Mode: Preset
+- Select Curve Preset: Flat
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Set Curves > Gamma Curve
+#### Desligar cores em Main settings
+- Saturation 2: Off (as in library)
+- Saturation 3: Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Main settings
+#### Desligar cores em Color
+- Tuning ColorSatParams 1: Off (as in library)
+- Tuning ColorSatParams 2: Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Color
+#### Desligar contraste local em Light and Shadow
+- Clarity: Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Light and Shadow
+### Analog-Soft Configs
+#### Desligar nitidez em Sharpness
+- Sharp mini: Off (as in library)
+- Sharps macro(big sharp): Off (as in library)
+- Sharpening edge: Off (as in library)
+- Soft Sharp a (high sharp): 0.0
+- Soft Sharp b (medium sharp): 0.0
+- Soft Sharp c (low sharp):
+- Sabre Sharp: 0.00
+- Sabre Contrast - Sharp: Off (as in library)
+- Caminho: Configurações > Additional Settings > Lib-patcher > \[Lente\] > Sharpness
 ## Extras
 Recursos que não fazem parte de Analog, mas podem ser ativados manualmente nas configurações.
 ### Compensação de Exposição
@@ -972,16 +1083,33 @@ Se a tela ficar preta, trocar para o modo Camera e voltar ao modo Vídeo.
 O vídeo vai aparecer distorcido e com a proporção errada na tela, mas será salvo corretamente.
 
 Somente 30fps.
-
-Estabilização
+#### Estabilização
 - Valor: Desligada
 - Caminho: Configurações > Additional Settings > Stream Config > Main cam > Video mode
-
-Stream Video mode
+#### Stream Video mode
 - Valor: 262144 - OpMode (Default)
 - Caminho: Configurações > Additional Settings > Stream Config > Main cam > Video mode
 
 Também funciona com Stream 32797 - Video EIS 8K
+### Video 4:3 Full Sensor
+Para gravar vídeo na proporção 4:3, com a imagem do sensor inteira e sem corte, ligue a opção Resolução Manual nas Configurações.
+#### Enable manual resolution 
+Valor: Ligada
+- Caminho: Configurações > Additional Settings > Video settings > Video resolution > Enable manual resolution
+- Ativa a resolução manual de vídeo:
+    - Front lens (Frontal): 3264 x 2448
+    - Main lens (Principal): 3264 x 2448
+    - Tele lens (Macro): 1200 x 1600
+    - Wide lens (Ultra Angular): 3264 x 2448
+    - ID4 lens (Preto e Branco): 3264 x 2448
+    - ID5 lens (Qualidade Máxima): 3264 x 2448
+
+A resolução de 3264 x 2448 é a mais próxima do 4K 4:3 (3840 x 2440) que está disponível e grava sem dificuldades, como perda de frames. Veja todas as resoluções disponíveis para gravação de vídeo em [Especificações](#Especificações).
+
+A lente Macro só faz vídeo com essa opção ligada, já que a resolução máxima do sensor de 1200 x 1600 é menor que a opção Full HD de 1920 x 1080, padrão mínimo da Google Camera.
+
+A lente Frontal parece não ter implementado estabilização de vídeo na proporção 4:3, então é preciso desativar a estabilização:
+- Caminho: Configurações > Additional Settings > Stream config > Front cam > Video mode: 0 - default. 
 ### Balanço de branco manual
 Para ativar o balanço de branco manual:
 - Ativar a configuração White Balance
@@ -1047,15 +1175,15 @@ Mas não é usada em Analog porque causa problemas graves em fotos com movimento
 ## Changelog
 ### v.0.1.0 - Inicial
 Adições:
-- 4 lentes configuradas com ampliação: Principal 64MP (2x), Ultra Angular 32MP (2x), Macro 30MP (4x) e Frontal 20MP (2x)
-- HDR+ Melhorado com número de quadros automático, para fotos rápidas e nítidas, e sem ZSL, para menos ruído.
-- Correção de exposição, para fotos rápidas, com menos ruído, e corretas no sol
+- 4 lentes configuradas com ampliação, Principal 64MP (2x), Ultra Angular 32MP (2x), Macro 30MP (4x) e Frontal 20MP (2x)
+- HDR+ Melhorado com quantidade de quadros automática, para fotos rápidas e nítidas, e sem ZSL, para menos ruído.
+- Correção de exposição, para fotos rápidas, com menos ruído, e corretas ao sol
 - Interface do Pixel 2, para redução de ruído com mais qualidade
 - Modelo HDR do Pixel 4 XL, para cores naturais e mais definição nos detalhes
 - HEXAGON ativado, para um processamento rápido, sem perda de qualidade.
 - SABRE merge em fotos com e sem zoom, para detalhes mais definidos e redução de ruído melhor
-- Algoritmo RAISR para ampliação em 64MP e zoom.
-- Controle lógico em Remosaicked para um bom demosaicing, com detalhes definidos e boa redução de ruído
+- Algoritmo RAISR para ampliação e zoom.
+- Lógica do Sensor como Remosaicked, para um bom demosaicking, com detalhes definidos e boa redução de ruído
 - Modelo de redução de ruído do sistema
 - Redução de ruído mínima no Lib-Patcher, para preservar o granulado natural
 - Nitidez artificial reduzida, para fotos mais naturais, com menos ruído e sem artefatos
@@ -1069,13 +1197,14 @@ Adições:
 - Top Shot com vídeo em 2448p 3:4
 - Melhoria de fala no vídeo da Frontal
 - Vídeo principal em até 4K 60fps com EIS e 8K 30fps sem EIS
+- Vídeo sem EIS no modo Qualidade Máxima
 - Câmera lenta em 1080p 120fps e 720p 240fps
 - Timelapse em 8K a 1x, 5x, 10x, 30x e 100x
-- Vídeo sem EIS no modo Qualidade Máxima
 - Modo Retrato salva junto a foto original
 - Opção de embelezamento no Modo Retrato e lente Frontal
 - Opção de flash da tela na lente Frontal
 - Modo Preto e Branco ortocromático, que reduz a absorção do vermelho, usado em filmes com visual antigo, como O Farol
 - Modo Qualidade Máxima com 53 quadros, para cenas difíceis que exigem o máximo da remoção de ruído
-- Focos ajustados nas opções Próximo, Distante e Infinito do modo Visão Noturna
-- Modo Google Lens, para traduzir textos com a câmera, ou ler QR codes
+- Foco ajustado nas opções Próximo, Distante e Infinito do modo Visão Noturna
+- Modo Google Lens, para traduzir textos com a câmera, ou ler QR code
+- AE Target FPS range ajustado com valores do sistema, 7-30fps.
