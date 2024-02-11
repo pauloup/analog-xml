@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Analog é um XML de configuração da Google Camera
   para os celulares POCO F4 GT e Redmi K50 Gaming.
   Ache aqui informações e ajuda.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/analog-xml" # the subpath of your site, e.g. /blog
+url: "http://pauloup.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: paulotwain
 github_username:  pauloup
 
