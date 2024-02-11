@@ -1,0 +1,4 @@
+baseURL = 'https://pauloup.github.io/analog-xml/'
+languageCode = 'pt-br'
+title = 'Analog XML Guia'
+theme = 'hugo-book'
